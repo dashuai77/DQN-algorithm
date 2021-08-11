@@ -1,7 +1,4 @@
-Python 3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> if __name__ == '__main__':
+ if __name__ == '__main__':
     env = make_env('PongNoFrameskip-v4')
     #env = gym.make('CartPole-v1')
     best_score = -np.inf
