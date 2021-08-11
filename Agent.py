@@ -62,14 +62,6 @@
         self.epsilon = self.epsilon - self.eps_dec \
                            if self.epsilon > self.eps_min else self.eps_min
 
-    def save_models(self):
-        self.q_eval.save_checkpoint()
-        self.q_next.save_checkpoint()
-
-    def load_models(self):
-        self.q_eval.load_checkpoint()
-        self.q_next.load_checkpoint()
-
     def learn(self):
         if self.memory.mem_cntr < self.batch_size:
             return
