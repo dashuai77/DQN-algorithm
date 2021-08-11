@@ -1,7 +1,4 @@
-Python 3.9.6 (v3.9.6:db3ff76da1, Jun 28 2021, 11:49:53) 
-[Clang 6.0 (clang-600.0.57)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> class DQNAgent(object):
+ class DQNAgent(object):
     def __init__(self, gamma, epsilon, lr, n_actions, input_dims,
                  mem_size, batch_size, eps_min=0.01, eps_dec=5e-7,
                  replace=1000, algo=None, env_name=None, chkpt_dir='tmp/dqn'):
